@@ -3,8 +3,13 @@ def move_disk(pegs,disk,source,destination):
 
 
 def move_tower(pegs,disk,source,destination):
-
-##ここを埋めてください
+        if disk==0:
+                move_disk(pegs,0,source,destination)
+        else:
+                a=3-source-destination
+                move_tower(pegs,disk-1,source,a)
+                move_disk(pegs,0,source,destination)
+                move_tower(pegs,disk-1,a,destination)
 
 def hanoi(n):
     pegs = [[] for i in range(3)]
