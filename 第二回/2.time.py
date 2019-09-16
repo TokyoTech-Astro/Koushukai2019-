@@ -23,6 +23,5 @@ if __name__ == "__main__":
     n = int(input("n = "))
     print(main(n))
         
-
 print("Elapsed Time : %s seconds" % (time.time()-start_time))
 
